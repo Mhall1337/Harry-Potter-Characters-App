@@ -23,7 +23,7 @@ function Characters(){
             <ul>
             {searchStudents.map((student, index)=> 
               <div key={index}>
-                <li key={index}>{student.name} <AddButton student={student}/></li> 
+                <li key={index}>{student.name} <AddButton student={student} />  </li> 
               </div>
             )}
             </ul>
