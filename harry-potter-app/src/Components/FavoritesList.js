@@ -73,7 +73,9 @@ const favorites = [
         <div>
             {favCharacters.map((character, index)=>
             <div key={index}>
-              <p key={index}>Character Name:  {character.name}, Played By: {character.actor}</p>
+              <p key={index}>Character Name:  {character.name} </p>
+              <p>Played By: {character.actor}</p>
+              <img src={character.image} alt={character.name}></img>
             </div>
             )}
         </div>
