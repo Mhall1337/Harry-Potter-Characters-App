@@ -59,6 +59,32 @@
       "alive": true,
       "image": "http://hp-api.herokuapp.com/images/hermione.jpeg",
       "id": 2
+    },
+    {
+      "name": "Dobby",
+      "alternate_names": [],
+      "species": "house-elf",
+      "gender": "male",
+      "house": "",
+      "dateOfBirth": "",
+      "yearOfBirth": "",
+      "wizard": false,
+      "ancestry": "",
+      "eyeColour": "green",
+      "hairColour": "",
+      "wand": {
+        "wood": "",
+        "core": "",
+        "length": ""
+      },
+      "patronus": "",
+      "hogwartsStudent": false,
+      "hogwartsStaff": false,
+      "actor": "Toby Jones",
+      "alternate_actors": [],
+      "alive": false,
+      "image": "",
+      "id": 3
     }
   ]
 }

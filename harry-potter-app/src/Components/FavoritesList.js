@@ -63,10 +63,41 @@ const favorites = [
           "alive": true,
           "image": "http://hp-api.herokuapp.com/images/hermione.jpeg",
           "id": 2
+        },
+        {
+          "name": "Dobby",
+          "alternate_names": [],
+          "species": "house-elf",
+          "gender": "male",
+          "house": "",
+          "dateOfBirth": "",
+          "yearOfBirth": "",
+          "wizard": false,
+          "ancestry": "",
+          "eyeColour": "green",
+          "hairColour": "",
+          "wand": {
+            "wood": "",
+            "core": "",
+            "length": ""
+          },
+          "patronus": "",
+          "hogwartsStudent": false,
+          "hogwartsStaff": false,
+          "actor": "Toby Jones",
+          "alternate_actors": [],
+          "alive": false,
+          "image": "",
+          "id": 3
         }
       ]
 
     useEffect(()=>setFaveCharacters(favorites),[])
+
+    function dobbyIsFree(character){
+        return
+        
+    }
 
     
     return(
@@ -75,7 +106,7 @@ const favorites = [
             <div key={index}>
               <p key={index}>Character Name:  {character.name} </p>
               <p>Played By: {character.actor}</p>
-              <img src={character.image} alt={character.name}></img>
+              {character.name === "Dobby"? <img src="https://images.ctfassets.net/usf1vwtuqyxm/68gfGWd2SDOBdgAtDA4DR9/f476cd3f2569f733ee933d2b022d7c91/WB-HP-F7-deathly-hallows-dobby-web-landscape.jpg?fm=jpg&q=70&w=2560" alt={character.name}></img> : <img src={character.image} alt={character.name}></img>}
             </div>
             )}
         </div>
