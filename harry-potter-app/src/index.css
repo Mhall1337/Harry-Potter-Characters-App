@@ -22,10 +22,10 @@ img {
   width: auto;
   padding: 12px;
   margin: 6px 6px 6px;
-  border: 10px;
-  border-color: black;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px
 
 }
-.homePage{
-  background-image: "https://i.ebayimg.com/images/g/H1MAAOSwcHRdPFKt/s-l400.jpg";
+body{
+  background-image: url("https://m.media-amazon.com/images/I/71nsk6vUTlL._AC_SL1470_.jpg");
 }
