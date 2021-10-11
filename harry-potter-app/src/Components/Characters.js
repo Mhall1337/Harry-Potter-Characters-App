@@ -18,7 +18,7 @@ function Characters(){
 
 
     return(
-        <div>
+        <div className="characters">
             <Filter handleCharacterSearch={handleCharacterSearch}/>
             <ul>
             {searchStudents.map((student, index)=> 

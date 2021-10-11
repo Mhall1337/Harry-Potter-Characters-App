@@ -93,14 +93,19 @@ const favorites = [
       ]
 
     useEffect(()=>setFaveCharacters(favorites),[])
-
+      
  
     return(
+        
         <div >
             {favCharacters.map((character, index)=>
             <div className='favList' style={{display: "inline-block"}} key={index}>
               <p key={index}>Character Name:  {character.name} </p>
               <p>Played By: {character.actor}</p>
+              <p>House: {character.house}</p>
+              <p>Year Born: {character.yearOfBirth}</p>
+              <p>Ancestry: {character.ancestry}</p>
+              <p>Wand: wood: {character.wand.wood}, Core: {character.wand.core}, Length: {character.wand.length} )</p>
               {character.name === "Dobby"? <img src="https://i.pinimg.com/originals/f2/80/29/f28029b349490f93326b87268e08088e.jpg" alt={character.name}></img> : <img src={character.image} alt={character.name}></img>}
             </div>
             )}

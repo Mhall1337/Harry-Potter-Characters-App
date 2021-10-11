@@ -1,4 +1,8 @@
+
+
 body {
+  text-transform: capitalize;
+  font: ('HARRYP__.TTF');
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -18,6 +22,8 @@ img {
 }
 
 .favList{
+  
+  background-color: bisque;
   padding: 10px;
   width: auto;
   padding: 12px;
@@ -28,4 +34,14 @@ img {
 }
 body{
   background-image: url("https://m.media-amazon.com/images/I/71nsk6vUTlL._AC_SL1470_.jpg");
+}
+
+.homePage{
+  text-align: center;
+  font-size: 50px;
+  color: #740001;
+}
+
+.characters{
+  color:white;
 }
