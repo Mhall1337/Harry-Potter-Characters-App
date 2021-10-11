@@ -94,19 +94,14 @@ const favorites = [
 
     useEffect(()=>setFaveCharacters(favorites),[])
 
-    function dobbyIsFree(character){
-        return
-        
-    }
-
-    
+ 
     return(
-        <div>
+        <div >
             {favCharacters.map((character, index)=>
-            <div key={index}>
+            <div className='favList' style={{display: "inline-block"}} key={index}>
               <p key={index}>Character Name:  {character.name} </p>
               <p>Played By: {character.actor}</p>
-              {character.name === "Dobby"? <img src="https://images.ctfassets.net/usf1vwtuqyxm/68gfGWd2SDOBdgAtDA4DR9/f476cd3f2569f733ee933d2b022d7c91/WB-HP-F7-deathly-hallows-dobby-web-landscape.jpg?fm=jpg&q=70&w=2560" alt={character.name}></img> : <img src={character.image} alt={character.name}></img>}
+              {character.name === "Dobby"? <img src="https://i.pinimg.com/originals/f2/80/29/f28029b349490f93326b87268e08088e.jpg" alt={character.name}></img> : <img src={character.image} alt={character.name}></img>}
             </div>
             )}
         </div>

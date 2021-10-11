@@ -6,16 +6,16 @@ function NavBar(){
         width: "auto",
         padding: "12px",
         margin: "0 6px 6px",
-        background: "blue",
+        background: "#740001",
         textDecoration: "none",
         color: "white",
     }
 
     return(
         <div className="navBar">
-          <NavLink style={linkStyles} activeStyle={{background: "red"}} to="/" exact>Home</NavLink>
-          <NavLink style={linkStyles} activeStyle={{background: "red"}} to="/characters" exact>All Characters</NavLink>
-          <NavLink style={linkStyles} activeStyle={{background: "red"}} to="/favorites" exact>Favorite Characters</NavLink>
+          <NavLink style={linkStyles} activeStyle={{background: "#D3A625"}} to="/" exact>Home</NavLink>
+          <NavLink style={linkStyles} activeStyle={{background: "#D3A625"}} to="/characters" exact>All Characters</NavLink>
+          <NavLink style={linkStyles} activeStyle={{background: "#D3A625"}} to="/favorites" exact>Favorite Characters</NavLink>
         </div>
     )
 }

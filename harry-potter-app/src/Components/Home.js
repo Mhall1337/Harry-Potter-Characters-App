@@ -1,6 +1,6 @@
 function Home(){
     return(
-        <div>
+        <div className="homePage">
             <h1>Harry Potter App</h1>
         </div>
     )

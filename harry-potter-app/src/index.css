@@ -16,3 +16,16 @@ img {
   width: 300px;
   height: auto
 }
+
+.favList{
+  padding: 10px;
+  width: auto;
+  padding: 12px;
+  margin: 6px 6px 6px;
+  border: 10px;
+  border-color: black;
+
+}
+.homePage{
+  background-image: "https://i.ebayimg.com/images/g/H1MAAOSwcHRdPFKt/s-l400.jpg";
+}
