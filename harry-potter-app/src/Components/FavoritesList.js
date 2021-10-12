@@ -19,8 +19,7 @@ function FavoritesList(){
     }
       
     return(
-        
-        <div >
+        <div className='favBackground'>
             {favCharacters.map((character, index)=>
             <div className='favList' style={{display: "inline-block"}} key={index}>
               <p key={index}>Character Name:  {character.name} </p>
