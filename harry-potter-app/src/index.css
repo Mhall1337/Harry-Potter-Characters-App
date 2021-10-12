@@ -15,25 +15,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+/* @font-face {
+  font-family:"Harry P";
+  src: url("HARRYP__.ttf") format("truetype");
+} */
 img {
   width: 300px;
   height: auto
 }
-
-.favList{
+.favPic{
+  width: 80%;
+  min-height: 300px;
+  margin: 0 auto;  
   
-  background-color: bisque;
+}
+.favList{
   padding: 10px;
   width: auto;
   padding: 12px;
   margin: 6px 6px 6px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 5px
+  border-radius: 5px;
+ 
 
 }
 body{
-  background-image: url("https://m.media-amazon.com/images/I/71nsk6vUTlL._AC_SL1470_.jpg");
+  /* background-image: url("https://live.staticflickr.com/7005/6489877101_afaa9a126b_b.jpg");  */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .homePage{
@@ -43,5 +54,14 @@ body{
 }
 
 .characters{
-  color:white;
+  
+  columns: 100px 3;
+  padding: 30px;
+  
+}
+
+.charList{
+  padding: 5px;
+  
+
 }
