@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+This app was created for an easy way to find out fun details about your favorite Harry Potter Characters. To get started, click on the "All Characters" button on the top of the screen. This will take you to a complete list of all characters from the Harry Potter collection. There is a search bar at the top left of the screen where you can type to search for your favorite character. Once you find who you want to add, click the "Add to Favorites" button. This button will add your favorite character to the database and be displayed in the "Favorite Characters" component. After adding all your favorite characters, click on the "Favorite Characters" button on the top of the screen and you will find each selected character, along with some details from the API about them. Lastly, to remove a character from your favorites list, simply click the "Remove From Favorites" button.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+For this app to work, the use of JSON Server is required. 
+If you do not have JSON Server installed, execute the following command in your terminal, if you do, skip this step and start the server:
 
-## Available Scripts
+npm install -g json-server
 
-In the project directory, you can run:
+After it is installed, navigate to the harry-potter-app directory and start the server with the following command:
 
-### `npm start`
+json-server --watch db.json
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Now, all db.json information will be available and any changes made to the inventory via the app will be saved there.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+To exit the json server, enter ctrl + c into the terminal.
 
-### `npm test`
+Additionally, we will need to start the front end server. To do so, enter the following command:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm start
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Make sure this server is not running on the same port as your back-end JSON server. When prompted to run on another port, type "Y"
