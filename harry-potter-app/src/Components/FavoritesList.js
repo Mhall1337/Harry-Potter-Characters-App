@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react";
 
 function FavoritesList(){
-    const [favCharacters, setFaveCharacters] = useState([])
+    const [favCharacters, setFavCharacters] = useState([])
 
     useEffect(()=>
     fetch("http://localhost:3000/favorites")
     .then(resp => resp.json())
-    .then(characters => setFaveCharacters(characters))
+    .then(characters => setFavCharacters(characters))
     ,[])
     
     function removeFromFavorites(id){
-        setFaveCharacters(favCharacters.filter(character => character.id !== id))
+        setFavCharacters(favCharacters.filter(character => character.id !== id))
         fetch(`http://localhost:3000/favorites/${id}`,{
             method: 'DELETE'
         })

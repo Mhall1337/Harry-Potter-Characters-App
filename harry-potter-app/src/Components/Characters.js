@@ -3,17 +3,17 @@ import Filter from "./Filter";
 import AddButton from "./AddToFavoritesList.js"
 
 function Characters(){
-    const [students, setStudents]=useState([])
+    const potterCharacters = []
     const [searchStudents, setSearchStudents]=useState([])
 
     useEffect(()=>
     fetch("http://hp-api.herokuapp.com/api/characters")
     .then(resp => resp.json())
-    .then(students => {setStudents(students); setSearchStudents(students)}),
+    .then(students => {potterCharacters.push(students); setSearchStudents(students)}),
     [])
 
     function handleCharacterSearch(e){
-        setSearchStudents(students.filter(student => student.name.toLowerCase().includes(e.target.value.toLowerCase())))
+        setSearchStudents(potterCharacters.filter(student => student.name.toLowerCase().includes(e.target.value.toLowerCase())))
     }
 
     return(

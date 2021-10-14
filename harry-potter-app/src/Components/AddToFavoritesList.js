@@ -12,9 +12,6 @@ export default function AddToFavoritesList({student}){
         .then(resp => console.log(resp))
         
     }
-    return(
-        <div>
-            <button onClick={handleAddToFavorites}>Add to Favorites</button>
-        </div>
-    )
+    return <button onClick={handleAddToFavorites}>Add to Favorites</button>
+    
 }
