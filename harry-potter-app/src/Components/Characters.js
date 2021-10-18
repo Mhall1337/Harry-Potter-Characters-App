@@ -12,6 +12,7 @@ function Characters(){
     .then(students => {potterCharacters.push(students); setSearchStudents(students)}),
     [])
 
+    
     function handleCharacterSearch(e){
         setSearchStudents(potterCharacters.filter(student => student.name.toLowerCase().includes(e.target.value.toLowerCase())))
     }

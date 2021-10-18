@@ -9,7 +9,7 @@ After it is installed, navigate to the harry-potter-app directory and start the 
 
 json-server --watch db.json
 
-Now, all db.json information will be available and any changes made to the inventory via the app will be saved there.
+Now, all db.json information will be available and any changes made to the Favorites List via the app will be saved there.
 
 To exit the json server, enter ctrl + c into the terminal.
 
