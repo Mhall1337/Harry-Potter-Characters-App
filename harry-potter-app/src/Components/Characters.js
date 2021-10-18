@@ -3,13 +3,13 @@ import Filter from "./Filter";
 import AddButton from "./AddToFavoritesList.js"
 
 function Characters(){
-    const potterCharacters = []
+    const [potterCharacters, setPotterCharacters] = useState([])
     const [searchStudents, setSearchStudents]=useState([])
 
     useEffect(()=>
     fetch("http://hp-api.herokuapp.com/api/characters")
     .then(resp => resp.json())
-    .then(students => {potterCharacters.push(students); setSearchStudents(students)}),
+    .then(students => {setPotterCharacters(students); setSearchStudents(students)}),
     [])
 
     

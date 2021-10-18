@@ -17,7 +17,7 @@ function FavoritesList(){
         .then(resp => resp.json())
         .then()
     }
-      
+
     return(
         <div className='favBackground'>
             {favCharacters.map((character, index)=>

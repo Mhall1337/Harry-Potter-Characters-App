@@ -1,4 +1,3 @@
-
 import './App.css';
 import Characters from './Components/Characters';
 import FavoritesList from './Components/FavoritesList';
